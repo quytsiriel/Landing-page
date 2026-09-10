@@ -1,0 +1,75 @@
+:root {
+  /* --- Primitive Color Tokens --- */
+  --color-white: #ffffff;
+  --color-canvas: #f8fafc;
+  --color-canvas-alt: #f0f9ff;
+  --color-slate-900: #0f172a;
+  --color-slate-800: #1e293b;
+  --color-slate-700: #334155;
+  --color-slate-600: #475569;
+  --color-slate-400: #94a3b8;
+  --color-slate-200: #e2e8f0;
+  --color-slate-100: #f1f5f9;
+
+  /* --- Brand & Theme Colors (Ocean & High-Tech Cyan) --- */
+  --color-ocean-blue: #0284c7;
+  --color-cyan-vibrant: #06b6d4;
+  --color-royal-blue: #2563eb;
+  --color-emerald: #10b981;
+  --color-amber: #f59e0b;
+  --color-rose: #f43f5e;
+
+  /* --- Semantic Tokens --- */
+  --bg-app: #f8fafc;
+  --text-primary: var(--color-slate-900);
+  --text-secondary: var(--color-slate-600);
+  --text-muted: var(--color-slate-400);
+  --text-inverse: #ffffff;
+
+  --accent-primary: var(--color-ocean-blue);
+  --accent-secondary: var(--color-cyan-vibrant);
+  --accent-highlight: var(--color-royal-blue);
+
+  /* --- Glassmorphism Design Tokens --- */
+  --glass-bg-subtle: rgba(255, 255, 255, 0.65);
+  --glass-bg-standard: rgba(255, 255, 255, 0.82);
+  --glass-bg-elevated: rgba(255, 255, 255, 0.92);
+  --glass-bg-terminal: #0b1329; /* High-tech dark contrast terminal */
+  --glass-terminal-border: rgba(6, 182, 212, 0.35);
+
+  --glass-border: 1px solid rgba(255, 255, 255, 0.85);
+  --glass-border-subtle: 1px solid rgba(2, 132, 199, 0.12);
+  --glass-border-accent: 1px solid rgba(6, 182, 212, 0.35);
+
+  --glass-blur-sm: blur(10px);
+  --glass-blur-md: blur(16px);
+  --glass-blur-lg: blur(24px);
+
+  --glass-shadow-sm: 0 4px 16px -2px rgba(2, 132, 199, 0.06), 0 0 0 1px rgba(255, 255, 255, 0.8) inset;
+  --glass-shadow-md: 0 12px 32px -4px rgba(2, 132, 199, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.9) inset;
+  --glass-shadow-lg: 0 24px 48px -8px rgba(2, 132, 199, 0.12), 0 0 0 1px rgba(255, 255, 255, 0.95) inset;
+  --glass-shadow-glow: 0 0 25px rgba(6, 182, 212, 0.22);
+
+  /* --- Gradients --- */
+  --gradient-ocean: linear-gradient(135deg, #0284c7 0%, #06b6d4 100%);
+  --gradient-ocean-royal: linear-gradient(135deg, #2563eb 0%, #0284c7 50%, #06b6d4 100%);
+  --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.65) 100%);
+  --gradient-text: linear-gradient(135deg, #0f172a 0%, #0284c7 100%);
+  --gradient-text-vibrant: linear-gradient(135deg, #0284c7 0%, #06b6d4 60%, #2563eb 100%);
+
+  /* --- Typography Scales --- */
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  /* --- Spacing & Radii --- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}

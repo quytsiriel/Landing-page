@@ -1,0 +1,12 @@
+tên : Quách Đại Dương, tuổi 20, trường hiện tại Đại Học Công Nghệ Đại Học Quốc Gia Hà Nội (có thể thêm logo trường nếu bố cục ổn). 
+vị trí hiện tại : backend Developer tại Jupiter Solution 
+các mạng xã hội khác : github :https://github.com/quytsiriel, facebook: https://www.facebook.com/duong.quach.58726, instagram : https://www.instagram.com/deepduong/, liên hệ gmail : quytsiriel@gmail.com.
+Sản phẩm : MedPal (nhét ảnh)
+mô tả : MedPal là một ứng dụng hỗ trợ y tế tích hợp AI, giúp người dùng theo dõi triệu chứng, nhận lời khuyên sức khỏe và tìm kiếm các cơ sở y tế gần nhất. Dự án sử dụng mô hình ngôn ngữ lớn (LLM) MedGemma thông qua Ollama để cung cấp các phản hồi chuyên sâu về y khoa.
+techstack : Frontend: Flutter (Sử dụng Riverpod để quản lý state, GoRouter để điều hướng).
+Backend: Python (FastAPI, tích hợp với các AI Agents).
+Cơ sở dữ liệu: Firebase (Cloud Firestore để lưu data, Firebase Auth để xác thực).
+Trí tuệ nhân tạo (AI):
+MedGemma: Chạy thông qua Ollama trên FPT AI Factory để xử lý nghiệp vụ y tế.
+Whisper: Xử lý chuyển đổi giọng nói thành văn bản.
+Giải thưởng : Giải triển vọng trong cuộc thi google developer on campus 2026 ( nhét ảnh )

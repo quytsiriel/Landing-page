@@ -1,0 +1,29 @@
+[
+  {
+    "id": "msg_1788938849673_p19xv",
+    "name": "Nguyen Van A",
+    "email": "test@uet.vnu.edu.vn",
+    "subject": "Hợp tác dự án AI",
+    "message": "Xin chào Đại Dương, tôi muốn thảo luận về MedPal.",
+    "createdAt": "2026-09-09T07:27:29.673Z",
+    "userAgent": "Unknown"
+  },
+  {
+    "id": "msg_1788938667830_prq4r",
+    "name": "Client Browser Test",
+    "email": "client@test.com",
+    "subject": "Proxy check",
+    "message": "Testing contact submission via Vite proxy.",
+    "createdAt": "2026-09-09T07:24:27.830Z",
+    "userAgent": "Unknown"
+  },
+  {
+    "id": "msg_1788938333217_o21uq",
+    "name": "Nguyen Van A",
+    "email": "test@uet.vnu.edu.vn",
+    "subject": "Hợp tác dự án AI",
+    "message": "Xin chào Đại Dương, tôi muốn thảo luận về MedPal.",
+    "createdAt": "2026-09-09T07:18:53.217Z",
+    "userAgent": "Unknown"
+  }
+]

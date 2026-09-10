@@ -1,0 +1,14 @@
+{
+  "name": "quach-dai-duong-landing-page",
+  "version": "1.0.0",
+  "description": "Fullstack Personal Portfolio Landing Page for Quách Đại Dương",
+  "scripts": {
+    "dev": "npm --prefix server start & npm --prefix client dev",
+    "server": "npm --prefix server start",
+    "client": "npm --prefix client dev",
+    "build:client": "npm --prefix client run build",
+    "build": "npm --prefix client install && npm --prefix client run build && npm --prefix server install",
+    "start": "node server/index.js",
+    "test": "node server/test-api.js"
+  }
+}
