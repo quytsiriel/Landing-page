@@ -103,14 +103,31 @@ router.post('/contact', (req, res) => {
 
   try {
     let messages = [];
-    if (fs.existsSync(MESSAGES_FILE)) {
-      const content = fs.readFileSync(MESSAGES_FILE, 'utf-8');
-      if (content) {
-        messages = JSON.parse(content);
+    try {
+      if (fs.existsSync(MESSAGES_FILE)) {
+        const content = fs.readFileSync(MESSAGES_FILE, 'utf-8');
+        if (content) {
+          messages = JSON.parse(content);
+        }
+      }
+    } catch (readErr) {
+      console.warn('Notice: Could not read messages file directly, using empty buffer:', readErr.message);
+    }
+
+    messages.unshift(newMessage);
+
+    // Attempt persistent write, with /tmp fallback on serverless (Vercel)
+    try {
+      fs.writeFileSync(MESSAGES_FILE, JSON.stringify(messages, null, 2), 'utf-8');
+    } catch (writeErr) {
+      console.warn('Notice: Primary disk write failed (serverless read-only FS), trying /tmp fallback:', writeErr.message);
+      try {
+        const tmpFile = path.join('/tmp', 'messages.json');
+        fs.writeFileSync(tmpFile, JSON.stringify(messages, null, 2), 'utf-8');
+      } catch (tmpErr) {
+        console.warn('Notice: /tmp fallback also skipped, logged in memory:', tmpErr.message);
       }
     }
-    messages.unshift(newMessage);
-    fs.writeFileSync(MESSAGES_FILE, JSON.stringify(messages, null, 2), 'utf-8');
 
     return res.status(201).json({
       status: 'success',
@@ -118,10 +135,10 @@ router.post('/contact', (req, res) => {
       messageId: newMessage.id
     });
   } catch (error) {
-    console.error('Error saving message:', error);
+    console.error('Error handling contact message:', error);
     return res.status(500).json({
       status: 'error',
-      message: 'Đã có lỗi máy chủ khi lưu tin nhắn. Vui lòng thử lại sau.'
+      message: 'Đã có lỗi máy chủ khi gửi tin nhắn. Vui lòng thử lại sau.'
     });
   }
 });

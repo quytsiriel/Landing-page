@@ -2,6 +2,7 @@
   "name": "quach-dai-duong-landing-page",
   "version": "1.0.0",
   "description": "Fullstack Personal Portfolio Landing Page for Quách Đại Dương",
+  "type": "module",
   "scripts": {
     "dev": "npm --prefix server start & npm --prefix client dev",
     "server": "npm --prefix server start",
@@ -10,5 +11,10 @@
     "build": "npm --prefix client install && npm --prefix client run build && npm --prefix server install",
     "start": "node server/index.js",
     "test": "node server/test-api.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
   }
 }
